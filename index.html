@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- link css reset -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- link css styles -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- google-font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- link-icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>University website</title>
+    </head>
+    <body style="height: 5000px">
+        <header class="header">
+            <div class="container">
+                <div class="header-body">
+                    <nav class="header-nav">
+                        <a href="#!" class="header-nav__logo">
+                            <img
+                                src="./assets/img/eduford_img/logo.png"
+                                alt="logo"
+                                class="logo"
+                            />
+                        </a>
+                        <div class="header-nav__group">
+                            <ul class="header-nav__list">
+                                <li class="header-nav__item">
+                                    <a href="#!"> HOME </a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="#!"> ABOUT </a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="#!"> COURSE </a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="#!"> BLOG </a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="#!"> CONTACT </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ================mobile========================= -->
+                        <label for="checkbox" class="header__icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+
+                        <!-- ========================= -->
+                        <input
+                            type="checkbox"
+                            id="checkbox"
+                            class="header-input"
+                            hidden
+                        />
+
+                        <!-- ========================= -->
+                        <label for="checkbox" class="overlay"></label>
+
+                        <div class="header-nav__mobile-group">
+                            <ul class="header-nav__mobile-list">
+                                <li class="header-nav__mobile-item">
+                                    <a href="#!"> HOME </a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#!"> ABOUT </a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#!"> COURSE </a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#!"> BLOG </a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#!"> CONTACT </a>
+                                </li>
+                            </ul>
+
+                            <label for="checkbox" class="header-close">
+                                <i
+                                    class="fa-solid fa-circle-xmark"
+                                    style="color: #ffffff"
+                                ></i>
+                            </label>
+                        </div>
+                        <!-- ===================mobile========================== -->
+                    </nav>
+
+                    <section class="header-content">
+                        <h2 class="header__title">
+                            world's biggest university
+                        </h2>
+                        <p class="header__desc">
+                            Making website is now one of the easiest thing in
+                            the world. You just need to learn HTML,CSS,
+                            <br />Javascript and you are good to go.
+                        </p>
+                        <button class="header__btn">
+                            <a href="#!">Visit to know More</a>
+                        </button>
+                    </section>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- COURSE -->
+            <section class="course">
+                <div class="container">
+                    <div class="course-body">
+                        <div class="coure-content">
+                            <h1 class="course__title">courses we offer</h1>
+                            <p class="courses__desc">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="course-row">
+                            <!-- column-01 -->
+                            <div class="course-column">
+                                <h3 class="course-column__title">
+                                    intermediate
+                                </h3>
+                                <p class="course-column__desc">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quaerat, dolor laborum
+                                    nisi totam rerum est cum doloremque iusto
+                                    nesciunt quidem ex magni similique mollitia
+                                    animi. Deserunt distinctio placeat veritatis
+                                    consectetur.
+                                </p>
+                            </div>
+
+                            <!-- column-02 -->
+                            <div class="course-column">
+                                <h3 class="course-column__title">degree</h3>
+                                <p class="course-column__desc">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Cumque excepturi animi,
+                                    molestiae distinctio tempore, ab laboriosam
+                                    quis dolore obcaecati facilis aliquam
+                                    deserunt magnam impedit amet iure sed odio.
+                                    Rem, nemo.
+                                </p>
+                            </div>
+
+                            <!-- column-03 -->
+                            <div class="course-column">
+                                <h3 class="course-column__title">
+                                    post graduation
+                                </h3>
+                                <p class="course-column__desc">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Culpa ducimus, officiis
+                                    veritatis quasi eos sapiente eveniet modi
+                                    autem accusamus, qui iure doloremque sed
+                                    reiciendis sunt animi labore voluptas.
+                                    Dolorum, itaque.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- OUR GLOBAL -->
+            <section class="campus">
+                <div class="container">
+                    <div class="campus-body">
+                        <div class="campus-content">
+                            <h1 class="course__title">our global campus</h1>
+                            <p class="courses__desc">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit.
+                            </p>
+                        </div>
+
+                        <figure class="campus-image">
+                            <a href="#!" class="camous__link">
+                                <img
+                                    src="./assets/img/eduford_img/london.png"
+                                    alt=""
+                                    class="campus__img"
+                                />
+                            </a>
+
+                            <a href="#!" class="camous__link">
+                                <img
+                                    src="./assets/img/eduford_img/newyork.png"
+                                    alt=""
+                                    class="campus__img"
+                                />
+                            </a>
+
+                            <a href="#!" class="camous__link">
+                                <img
+                                    src="./assets/img/eduford_img/washington.png"
+                                    alt=""
+                                    class="campus__img"
+                                />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FACILITIES -->
+            <section class="facilities">
+                <div class="container">
+                    <div class="facilities-body">
+                        <div class="campus-content">
+                            <h1 class="course__title">our facilities</h1>
+                            <p class="courses__desc">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit.
+                            </p>
+                        </div>
+
+                        <div class="facilities-info">
+                            <!-- column-01 -->
+                            <div class="campus__item">
+                                <img
+                                    src="./assets/img/eduford_img/library.png"
+                                    alt=""
+                                    class="campus__item-img"
+                                />
+                                <h3 class="campus__item-header">
+                                    world class library
+                                </h3>
+                                <p class="campus__item-desc">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Rerum labore eligendi
+                                    eaque.
+                                </p>
+                            </div>
+
+                            <!-- column-02 -->
+                            <div class="campus__item">
+                                <img
+                                    src="./assets/img/eduford_img/basketball.png"
+                                    alt=""
+                                    class="campus__item-img"
+                                />
+                                <h3 class="campus__item-header">
+                                    largest play ground
+                                </h3>
+                                <p class="campus__item-desc">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Rerum labore eligendi
+                                    eaque.
+                                </p>
+                            </div>
+
+                            <!-- column-03 -->
+                            <div class="campus__item">
+                                <img
+                                    src="./assets/img/eduford_img/cafeteria.png"
+                                    alt=""
+                                    class="campus__item-img"
+                                />
+                                <h3 class="campus__item-header">
+                                    tasty and healthy food
+                                </h3>
+                                <p class="campus__item-desc">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Rerum labore eligendi
+                                    eaque.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- comment -->
+            <section class="comment">
+                <div class="container">
+                    <div class="comment-body">
+                        <div class="comment-content">
+                            <h1 class="course__title">what our student says</h1>
+                            <p class="courses__desc">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit.
+                            </p>
+                        </div>
+
+                        <div class="comment-row">
+                            <!-- column-01 -->
+                            <div class="comment-item">
+                                <img
+                                    src="./assets/img/eduford_img/user1.jpg"
+                                    alt=""
+                                    class="comment__avarta"
+                                />
+                                <div class="comment-row__content">
+                                    <p class="comment-row__desc">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Minima suscipit nam
+                                        quisquam ut nostrum modi labore quas
+                                        dolor omnis, similique itaque
+                                        voluptatibus? Minus eligendi, ducimus
+                                        beatae delectus consequatur nihil
+                                        doloremque.
+                                    </p>
+                                    <span class="comment__name"
+                                        >Christine Berkley</span
+                                    >
+                                    <div class="comment__icon">
+                                        <i
+                                            class="fa-solid fa-star"
+                                            style="color: #f44336"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-star"
+                                            style="color: #f44336"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-star"
+                                            style="color: #f44336"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-star"
+                                            style="color: #f44336"
+                                        ></i>
+                                        <i
+                                            class="fa-regular fa-star"
+                                            style="color: #f44336"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- column-02 -->
+                            <div class="comment-item">
+                                <img
+                                    src="./assets/img/eduford_img/user2.jpg"
+                                    alt=""
+                                    class="comment__avarta"
+                                />
+                                <div class="comment-row__content">
+                                    <p class="comment-row__desc">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Minima suscipit nam
+                                        quisquam ut nostrum modi labore quas
+                                        dolor omnis, similique itaque
+                                        voluptatibus? Minus eligendi, ducimus
+                                        beatae delectus consequatur nihil
+                                        doloremque.
+                                    </p>
+                                    <span class="comment__name"
+                                        >David Byer</span
+                                    >
+                                    <div class="comment__icon">
+                                        <i
+                                            class="fa-solid fa-star"
+                                            style="color: #f44336"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-star"
+                                            style="color: #f44336"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-star"
+                                            style="color: #f44336"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-star"
+                                            style="color: #f44336"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-star-half"
+                                            style="color: #f44336"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- call to action -->
+            <section class="cta">
+                <div class="container">
+                    <div class="cta-body">
+                        <h1 class="cta__header">
+                            enroll for our various online courses anywhere
+                            online from the world
+                        </h1>
+                        <button class="header__btn cta__btn">
+                            <a href="#!">contact us</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <div class="footer-body">
+                        <h4 class="footer-title">about us</h4>
+                        <p class="footer-desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Molestias natus id placeat doloribus inventore
+                            possimus tempora mollitia error qui. Cum ipsum
+                            officia voluptatibus quo expedita sit molestias hic
+                            .
+                        </p>
+                        <div class="footer-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <p class="copyright">
+                            made with
+                            <span><i class="fa-regular fa-heart"></i></span> by
+                            <strong>phuong van thang</strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

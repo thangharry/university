@@ -1,0 +1,477 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    /* transition: 1s ease; */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* common */
+.container {
+    width: 1136px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+/* header */
+
+.header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../img/eduford_img/banner.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    position: relative;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+.header-nav__list {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 150px;
+}
+.header-nav__item {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.header-nav__item a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.header-nav__item a:hover {
+    text-shadow: 1px 0 0 #fff;
+    border-bottom: 2px solid #f44336;
+}
+.header-content {
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header__title {
+    font-size: 62px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.header__desc {
+    margin: 20px 0 40px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.header__btn {
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 12px 34px;
+    transition: 0.5s ease-in-out;
+}
+.header__btn a {
+    color: #fff;
+    font-size: 16px;
+}
+.header__btn:hover {
+    background-color: #f44336;
+    border: 1px solid #f44336;
+}
+.header__btn:hover.header__btn a {
+    text-shadow: 1px 0 0 #fff;
+    text-decoration: underline;
+}
+.header__icon {
+    display: none;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    animation: fadeIn linear 0.2s;
+    z-index: 2;
+}
+.header-input:checked ~ .overlay {
+    display: block;
+}
+.header-nav__mobile-group {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    bottom: 0;
+    background: #f44336;
+    width: 150px;
+    max-width: 100%;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: transform linear 0.3s;
+}
+.header-input:checked ~ .header-nav__mobile-group {
+    transform: translateX(0%);
+}
+.header-nav__mobile-list {
+    margin-top: 50px;
+}
+.header-nav__mobile-item a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+}
+.header-nav__mobile-item a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.header-close {
+    position: absolute;
+    top: 1em;
+    left: 0.5em;
+}
+.header-close i {
+    font-size: 2.5rem;
+    /* color: #fff; */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media (max-width: 1023px) {
+    .header__title {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+    .header__desc {
+        margin: 20px 0 40px;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.7;
+    }
+    .logo {
+        width: 100px;
+    }
+    .header-nav__group {
+        display: none;
+    }
+
+    .header__icon {
+        display: inline-block;
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+/* ===========  course======== */
+.course {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.course-body {
+    text-align: center;
+}
+
+.course__title {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.course-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-column {
+    padding: 12px 20px 19px;
+    background-color: #fff3f3;
+    margin-right: 20px;
+    border-radius: 10px;
+    flex-basis: 31%;
+}
+.course-column:last-child {
+    margin-right: 0;
+}
+.course-column__title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 1rem 0 2rem;
+    text-transform: capitalize;
+}
+.course-column:hover {
+    box-shadow: 1px 0px 23px 1px rgba(202, 193, 193, 0.75);
+    -webkit-box-shadow: 1px 0px 23px 1px rgba(202, 193, 193, 0.75);
+    -moz-box-shadow: 1px 0px 23px 1px rgba(202, 193, 193, 0.75);
+}
+@media (max-width: 1023px) {
+    .course-row {
+        flex-direction: column;
+    }
+    .course-column {
+        margin: 1rem 0;
+    }
+}
+/* campus */
+.campus {
+    margin-bottom: 10rem;
+}
+.campus-content {
+    text-align: center;
+}
+.courses__desc {
+    font-weight: 400;
+}
+.campus-image {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.campus__img {
+    width: 100%;
+    border-radius: 20px;
+    /* transform: translateY(0); */
+}
+.campus__img:hover {
+    background-color: rgba(226, 0, 0, 0.7);
+    /* transform: translateY(100%); */
+}
+@media (max-width: 1023px) {
+    .campus-image {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* facilities */
+.facilities-info {
+    display: flex;
+    margin-top: 5%;
+}
+.campus__item {
+    /* max-width: 50%; */
+    /* height: 5000%; */
+    height: 450px;
+    /* background-color: red; */
+    margin-right: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.campus__item:last-child {
+    margin-right: 0;
+}
+.campus__item-img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    transition: 0.3s ease-in-out;
+}
+.campus__item-header {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin: 1rem 0 1.5rem;
+}
+.campus__item-desc {
+    color: #333;
+    line-height: 1.5;
+    max-width: 90%;
+}
+.campus__item:hover .campus__item-img {
+    transform: scale(1.1);
+}
+@media (max-width: 1023px) {
+    .facilities-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .campus__item {
+        width: 240px;
+        background-color: #bdbcbc;
+        margin-top: 1.5rem;
+    }
+    .campus__item-img {
+        width: 240px;
+        height: 55%;
+    }
+    .campus__item-header,
+    .campus__item-desc {
+        text-align: center;
+    }
+}
+/* comment */
+.comment-content {
+    margin-top: 10rem;
+    text-align: center;
+}
+.comment-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.comment-item {
+    padding: 12px 20px;
+    max-width: 550px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff3f3;
+    border-radius: 10px;
+}
+.comment__avarta {
+    max-width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 3rem;
+}
+.comment-row__desc {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.comment__name {
+    display: block;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.comment__icon {
+    margin-top: 1rem;
+}
+.comment-item:hover {
+    transform: translateY(-16px);
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 1023px) {
+    .comment-item {
+        margin: 2rem 0;
+    }
+    .comment-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .comment-row__content {
+        margin-top: 3rem;
+        margin-left: -40px;
+    }
+    .comment__avarta {
+        max-width: 15%;
+    }
+}
+/* call to action */
+.cta {
+    margin-top: 8rem;
+}
+.cta-body {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../img/eduford_img/banner2.jpg);
+
+    padding: 200px 0;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.cta__header {
+    margin: auto auto 2rem;
+    max-width: 60%;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+.cta__btn {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+@media (max-width: 1023px) {
+    .cta-body {
+        padding: 50px 0px;
+    }
+    .cta__header {
+        font-size: 1.5rem;
+        margin: 0;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+/* footer */
+.footer {
+    margin-top: 10rem;
+}
+.footer-body {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+}
+.footer-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.footer-desc {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+.footer-icon i {
+    cursor: pointer;
+    color: #f44336;
+    padding: 12px;
+    font-size: 1.7rem;
+}
+.copyright {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.copyright span {
+    color: #f44336;
+}
+.copyright strong {
+    text-transform: uppercase;
+}
+@media (max-width: 1023px) {
+    .footer-desc {
+        margin: 0 -40px;
+        /* text-align: left; */
+    }
+}
