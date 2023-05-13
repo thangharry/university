@@ -320,10 +320,12 @@ a {
         width: 240px;
         background-color: #bdbcbc;
         margin-top: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     .campus__item-img {
         width: 240px;
-        height: 55%;
+        height: 50%;
     }
     .campus__item-header,
     .campus__item-desc {
